@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<ConcurrentOrdering.Domain.Models.Product>
+@{
+    ViewData["Title"] = "Index";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Concurrent Store</h1>
+
+@foreach (var product in Model)
+{
+<div class="card" style="width: 18rem;">
+    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name">
+    <div class="card-body">
+        <h5 class="card-title">@product.Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+            Available units:
+            <span id="units_@product.Id">
+                @product.AvailableUnits
+            </span>
+        </h6>
+        <div class="btn-group btn-group-sm d-flex" role="group">
+            <button type="button" class="btn btn-primary" data-product-id="@product.Id" data-ordering="1">
+                <h2><i class="fas fa-user"></i></h2> Single order
+            </button>
+            <button type="button" class="btn btn-danger" data-product-id="@product.Id" data-ordering="2">
+                <h2><i class="fas fa-user-friends"></i></h2> Concurrent order
+            </button>
+        </div>
+
+        <div class="btn-group btn-group-sm d-flex" role="group">
+            <button type="button" class="btn btn-info" data-product-id="@product.Id" data-reset="3">
+                <i class="fas fa-store"></i> Reset units to 3
+            </button>
+        </div>
+    </div>
+</div> 
+}
