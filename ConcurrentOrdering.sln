@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConcurrentOrdering.Web", "ConcurrentOrdering.Web\ConcurrentOrdering.Web.csproj", "{65BEDD07-9201-47F9-BE52-D2D91CC1859D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentOrdering.Domain", "ConcurrentOrdering.Domain\ConcurrentOrdering.Domain.csproj", "{6C14B6A6-8436-40CC-9323-5F6C5A353C19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{65BEDD07-9201-47F9-BE52-D2D91CC1859D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65BEDD07-9201-47F9-BE52-D2D91CC1859D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65BEDD07-9201-47F9-BE52-D2D91CC1859D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C14B6A6-8436-40CC-9323-5F6C5A353C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C14B6A6-8436-40CC-9323-5F6C5A353C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C14B6A6-8436-40CC-9323-5F6C5A353C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C14B6A6-8436-40CC-9323-5F6C5A353C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
