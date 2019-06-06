@@ -32,7 +32,7 @@ ordering.SubmitOrder = function (product, userId) {
         ordering.UpdateAvailableUnits(result);
     })
     .fail(function (err, textStatus) {
-        let errorMsg;
+        console.log(err);
         if (err.responseJSON.allowRetry) {
             toasts.Notify(
                 `ERROR: User ${userId}`, 
@@ -41,11 +41,11 @@ ordering.SubmitOrder = function (product, userId) {
             );
         } else {
             toasts.Notify(
-                `ERROR: User ${userId}`, 
-                'Order failed because there are no available units.',
+                `ERROR: User ${userId}`,
+                err.responseJSON.error,
                 ERROR
             );
-        }        
+        }
     });
 };
 

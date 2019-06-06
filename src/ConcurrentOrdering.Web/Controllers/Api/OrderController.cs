@@ -41,7 +41,7 @@ namespace ConcurrentOrdering.Web.Controllers.Api
                 // Return results
                 select result.Match<IActionResult>(
                     Ok,
-                    StatusCode(500));
+                    StatusCode(500, new { Error = "No available units." }));
         }
     }
 }
