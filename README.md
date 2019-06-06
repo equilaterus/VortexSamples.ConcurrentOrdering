@@ -12,6 +12,8 @@ This sample shows how to use Vortex and how you can still use every known concep
 
 * EfCore [Concurrency Checks](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Domain/Models/Product.cs) integrated with a [global error handling](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Web/Controllers/HomeController.cs). *Note*: Concurrency expection errors return a flag *AllowRetry* so your client app can show better feedback to the user or even automatically retry operations.
 
+* Sample [tests](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/tree/master/test/ConcurrentOrdering.Domain.Tests).
+
 * MVC App using Javascript and jQuery.
 
 ## Project Structure
