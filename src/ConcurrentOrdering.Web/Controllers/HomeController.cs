@@ -37,12 +37,15 @@ namespace ConcurrentOrdering.Controllers
             // Get the details of the exception that occurred
             var exceptionFeature = HttpContext.Features.Get<IExceptionHandlerPathFeature>();
 
+            // Unknown exception
             if (exceptionFeature is null)
                 return StatusCode(500, "Unknown error");
 
+            // Non-API
             if (!exceptionFeature.Path.Contains("/api/", StringComparison.InvariantCultureIgnoreCase))
                 return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
             
+            // API
             if (exceptionFeature.Error is DbUpdateConcurrencyException)
                 return Json(new { Error = "Concurrency exception", AllowRetry = true });
             else
