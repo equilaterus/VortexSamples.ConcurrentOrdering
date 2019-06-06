@@ -28,6 +28,11 @@ namespace ConcurrentOrdering.Web.Migrations
                 table: "Products",
                 columns: new[] { "Id", "AvailableUnits", "ImageUrl", "Name" },
                 values: new object[] { 1, 3, "https://i.ytimg.com/vi/zRmh1aFHHQQ/hqdefault.jpg", "Thimbleweed Park Diskette" });
+
+            migrationBuilder.InsertData(
+                table: "Products",
+                columns: new[] { "Id", "AvailableUnits", "ImageUrl", "Name" },
+                values: new object[] { 2, 3, "https://i.ytimg.com/vi/GWMtT0EFX_0/hqdefault.jpg", "Return of the Obra Dinn" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

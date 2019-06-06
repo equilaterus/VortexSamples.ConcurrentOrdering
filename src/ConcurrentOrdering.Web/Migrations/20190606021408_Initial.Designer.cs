@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConcurrentOrdering.Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190605192340_Initial")]
+    [Migration("20190606021408_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -48,6 +48,13 @@ namespace ConcurrentOrdering.Web.Migrations
                             AvailableUnits = 3,
                             ImageUrl = "https://i.ytimg.com/vi/zRmh1aFHHQQ/hqdefault.jpg",
                             Name = "Thimbleweed Park Diskette"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AvailableUnits = 3,
+                            ImageUrl = "https://i.ytimg.com/vi/GWMtT0EFX_0/hqdefault.jpg",
+                            Name = "Return of the Obra Dinn"
                         });
                 });
 #pragma warning restore 612, 618

@@ -15,6 +15,13 @@ namespace ConcurrentOrdering.Domain.Infrastructure.Data
                 Name = "Thimbleweed Park Diskette",
                 AvailableUnits = 3,
                 ImageUrl = "https://i.ytimg.com/vi/zRmh1aFHHQQ/hqdefault.jpg"
+            },
+            new Product
+            {
+                Id = 2,
+                Name = "Return of the Obra Dinn",
+                AvailableUnits = 3,
+                ImageUrl = "https://i.ytimg.com/vi/GWMtT0EFX_0/hqdefault.jpg"
             }
         };
 
