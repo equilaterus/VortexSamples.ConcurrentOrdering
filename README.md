@@ -28,6 +28,8 @@ This sample shows how to use Vortex and how you can still use every known concep
 
   * **Models**: Domain anemic entities.
 
+* **ConcurrentOrdering.Domain.Tests**: Sample tests (this doesn't intend to be a complete test suite for a production project).
+
 * **ConcurrentOrdering.Web**: This project contains all specific *web-app* stuff.
 
   * **wwwroot**: javascript and css.
