@@ -1,5 +1,7 @@
 # VortexSamples.ConcurrentOrdering
 
+[![Build status](https://ci.appveyor.com/api/projects/status/cs1oavomm8d2lqst?svg=true)](https://ci.appveyor.com/project/dacanizares/vortexsamples-concurrentordering)
+
 This sample shows how to use Vortex and how you can still use every known concept of ASP Core, like handling *Concurrency Conflicts*. This project also showcases a recommended project structure for small to medium sized solutions.
 
 ## Features
@@ -15,6 +17,8 @@ This sample shows how to use Vortex and how you can still use every known concep
 * Sample [tests](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/tree/master/test/ConcurrentOrdering.Domain.Tests).
 
 * MVC App using Javascript and jQuery.
+
+* [Appveyor CI]((https://ci.appveyor.com/project/dacanizares/vortexsamples-concurrentordering)).
 
 ## Project Structure
 
