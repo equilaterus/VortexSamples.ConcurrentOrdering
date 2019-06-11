@@ -12,12 +12,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F2FA8FA-07B2-4C6D-9734-4AE1ACFC1D21}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{70AD2CEA-F786-4205-AB5A-9711D773B78A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrentOrdering.Domain.Tests", "test\ConcurrentOrdering.Domain.Tests\ConcurrentOrdering.Domain.Tests.csproj", "{7E126D40-064B-41E4-9F73-0F1CEF7E458C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConcurrentOrdering.Domain.Tests", "test\ConcurrentOrdering.Domain.Tests\ConcurrentOrdering.Domain.Tests.csproj", "{7E126D40-064B-41E4-9F73-0F1CEF7E458C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
