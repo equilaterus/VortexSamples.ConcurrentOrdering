@@ -11,6 +11,7 @@ using Equilaterus.Vortex;
 using ConcurrentOrdering.Models;
 using System.Diagnostics;
 using ConcurrentOrdering.Domain.Models;
+using Equilaterus.Vortex.AutoMapper.Extensions;
 
 namespace ConcurrentOrdering.Web.Controllers.Api
 {
