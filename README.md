@@ -42,13 +42,10 @@ This sample shows how to use Vortex and how you can still use every known concep
 
   * **Commands**: Actions that can be executed by the controllers.
 
-  * **Controllers**: They contain **Vortex Monands** that handle the execution of an action received by the web-app.
-
-  * **Extensions**: Extended methods.
+  * **Controllers**: They contain **Vortex Monads** that handle the execution of an action received by the web-app.
 
   * **Migrations**: EfCore migrations.
 
   * **Models**: You can add here View Models and other kind of DTOs.
 
   * **Views**: Razor views.
-
