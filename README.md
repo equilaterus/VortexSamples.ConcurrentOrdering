@@ -8,9 +8,9 @@ This sample shows how to use Vortex and how you can still use every known concep
 
 * [Controllers](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/tree/master/src/ConcurrentOrdering.Web/Controllers/Api) built with **Vortex** monads.
 
-* Use of [built-in ASP Core DI](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Web/Startup.cs) to inject *side-effects* (Ef Core repositories and Automapper) on a single entry-point (controllers).
+* Use of [built-in ASP Core DI](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Web/Startup.cs) to inject *side-effects* (Ef Core repositories and Automapper).
 
-* Injecting [behaviors](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Domain/Behaviors/OrderBehavior.cs) (*not dependencies*) using **Vortex**.
+* Injecting [behaviors](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Domain/Behaviors/OrderBehavior.cs) (*not dependencies*) for the business logic using **Vortex**.
 
 * EfCore [Concurrency Checks](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Domain/Models/Product.cs) integrated with a [global error handling](https://github.com/equilaterus/VortexSamples.ConcurrentOrdering/blob/master/src/ConcurrentOrdering.Web/Controllers/HomeController.cs). *Note*: Concurrency expection errors return a flag *AllowRetry* so your client app can show better feedback to the user or even automatically retry operations.
 
@@ -42,13 +42,10 @@ This sample shows how to use Vortex and how you can still use every known concep
 
   * **Commands**: Actions that can be executed by the controllers.
 
-  * **Controllers**: They contain **Vortex Monands** that handle the execution of an action received by the web-app.
-
-  * **Extensions**: Extended methods.
+  * **Controllers**: They contain **Vortex Monads** that handle the execution of an action received by the web-app.
 
   * **Migrations**: EfCore migrations.
 
   * **Models**: You can add here View Models and other kind of DTOs.
 
   * **Views**: Razor views.
-
