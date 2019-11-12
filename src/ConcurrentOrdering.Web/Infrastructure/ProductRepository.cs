@@ -1,4 +1,5 @@
-﻿using ConcurrentOrdering.Domain.Infrastructure.Data;
+﻿using ConcurrentOrdering.Domain.Infrastructure;
+using ConcurrentOrdering.Domain.Infrastructure.Data;
 using ConcurrentOrdering.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -6,7 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConcurrentOrdering.Domain.Infrastructure.Repositories
+namespace ConcurrentOrdering.Web.Infrastructure
 {
     public class ProductRepository : IProductRepository
     {

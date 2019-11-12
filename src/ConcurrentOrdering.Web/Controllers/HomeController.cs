@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ConcurrentOrdering.Models;
-using ConcurrentOrdering.Domain.Infrastructure.Repositories;
+using ConcurrentOrdering.Domain.Infrastructure;
 using AutoMapper;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;

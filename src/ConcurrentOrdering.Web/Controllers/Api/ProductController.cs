@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using ConcurrentOrdering.Domain.Behaviors;
-using ConcurrentOrdering.Domain.Infrastructure.Repositories;
+using ConcurrentOrdering.Domain.Infrastructure;
 using ConcurrentOrdering.Web.Commands;
 using Microsoft.AspNetCore.Mvc;
 using Equilaterus.Vortex;

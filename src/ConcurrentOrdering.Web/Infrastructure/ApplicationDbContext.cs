@@ -1,10 +1,11 @@
-﻿using ConcurrentOrdering.Domain.Models;
+﻿using ConcurrentOrdering.Domain.Infrastructure.Data;
+using ConcurrentOrdering.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ConcurrentOrdering.Domain.Infrastructure.Data
+namespace ConcurrentOrdering.Web.Infrastructure
 {
     public class ApplicationDbContext : DbContext
     {
@@ -16,6 +17,5 @@ namespace ConcurrentOrdering.Domain.Infrastructure.Data
         {
             modelBuilder.Seed();
         }
-    }
-    
+    }    
 }

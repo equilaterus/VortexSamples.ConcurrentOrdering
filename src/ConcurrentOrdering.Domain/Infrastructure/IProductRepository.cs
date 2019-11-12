@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using ConcurrentOrdering.Domain.Models;
 
-namespace ConcurrentOrdering.Domain.Infrastructure.Repositories
+namespace ConcurrentOrdering.Domain.Infrastructure
 {
     public interface IProductRepository
     {
