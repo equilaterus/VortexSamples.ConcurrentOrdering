@@ -22,15 +22,11 @@ This sample shows how to use Vortex and how you can still use every known concep
 
 ## Project Structure
 
-* **ConcurrentOrdering.Domain**: This project contains all classes related with business logic and persistance of the application.
+* **ConcurrentOrdering.Domain**: This project contains all classes related with business logic and persistance interfaces of the application.
 
   * **Behaviors**: Those are *static classes* that contain the *business logic*. Each method should be a [Pure Function](https://en.wikipedia.org/wiki/Pure_function), that give us guarantees on the behavior of the Application's core but also makes it easier to test.
 
-  * **Infrastructure**: Data-persistance and other side effects.
-  
-    * **Data**: Data-contexts and data-seeds.
-	
-	* **Repositories**: Persistance-related classes.
+  * **Infrastructure**: Persistance-related contracts.
 
   * **Models**: Domain anemic entities.
 
@@ -44,7 +40,9 @@ This sample shows how to use Vortex and how you can still use every known concep
 
   * **Controllers**: They contain **Vortex Monads** that handle the execution of an action received by the web-app.
 
-  * **Migrations**: EfCore migrations.
+  * **Infrastructure**: Implementations of *repository contracts*.
+
+  * **Migrations**: EfCore migrations and data seeds.
 
   * **Models**: You can add here View Models and other kind of DTOs.
 
